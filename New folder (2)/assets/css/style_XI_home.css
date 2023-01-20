@@ -46,15 +46,46 @@ section {
 .heading-link {
     text-align: center;
     background: url(../imgs/XII_TItle_Background.jpg) no-repeat;
-    opacity: .9;
     background-size: cover;
     background-position: center;
+}
+
+#heading-link-XI-Commerce , #heading-link-XI-Arts {
+    background: transparent;
+}
+
+#heading-link-XI-Commerce::before {
+    content: "";
+    background: url(../imgs/Commerce_title_bg.jpg) no-repeat;
+    background-size:100% 500%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#heading-link-XI-Arts::before {
+    content: "";
+    background: url(../imgs/arts_Title_bg.jpg) no-repeat;
+    background-size:100% 500%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .heading-link h3 {
     font-size: 4.25rem;
     text-transform: capitalize;
-    color: rgb(189, 199, 240);
+    color: solid rgb(6, 16, 56);
 }
 
 .heading-link p {
@@ -164,7 +195,7 @@ section {
 .header .navbar a:hover {
     background-color: rgb(145, 145, 222);
     color: rgb(245, 238, 238);
-    transition: ease-in-out .5s;
+    transition: ease-in-out .3s;
 }
 
 .header .icons div {
@@ -358,6 +389,10 @@ section {
     font-size: 1.6rem;
     line-height: 2;
     color: #777;
+}
+
+.courses .box-container .box .content a {
+    margin-top: 30px;
 }
 
 .courses .box-container .box .content .icons {

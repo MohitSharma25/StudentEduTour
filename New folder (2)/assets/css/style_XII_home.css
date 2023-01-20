@@ -195,7 +195,7 @@ section {
 .header .navbar a:hover {
     background-color: rgb(145, 145, 222);
     color: rgb(245, 238, 238);
-    transition: ease-in-out .5s;
+    transition: ease-in-out .3s;
 }
 
 .header .icons div {
@@ -389,6 +389,9 @@ section {
     font-size: 1.6rem;
     line-height: 2;
     color: #777;
+}
+.courses .box-container .box .content a {
+    margin-top: 30px;
 }
 
 .courses .box-container .box .content .icons {
