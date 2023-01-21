@@ -2,207 +2,224 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="author" content="Devcrud" />
-    <title>StudentEduTour</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/css/home.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <!-- page Navigation -->
-    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/imgs/logo.png" alt="" />
-            </a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#service">Our Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sign in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sign up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="ml-4 nav-link btn btn-primary btn-sm rounded">Components</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Of Second Navigation -->
-    <!-- Page Header -->
+<body>
+    <!-- header section starts  -->
     <header class="header">
-        <div class="overlay">
-            <h1 class="subtitle">LEARN AT YOUR COMFORT OF YOUR OWN HOME</h1>
-            <h1 class="title">WE INNOVATE LEARNING PROCESSES- StudentEduTour</h1>
-        </div>
-        <div class="shape">
-            <svg viewBox="0 0 1500 200">
-                <path
-                    d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z" />
-            </svg>
-        </div>
-        <div class="mouse-icon">
-            <div class="wheel"></div>
+        <a href="#" class=""> <img src="assets/imgs/logo.png" alt="" width="50px "> </a>
+        <a href="#" class="logo">StudentEduTour</a>
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="home.html">home</a>
+            <a href="about.html">about</a>
+            <a href="Ask doubt.html">courses</a>
+            <a href="contact.html">contact</a>
+        </nav>
+        <div class="icons">
+            <div id="account-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
         </div>
     </header>
-    <!-- End Of Page Header -->
-    <!-- Blog Section -->
-    <section class="section" id="blog">
-        <div class="container">
-            <h6 class="section-title mb-0 text-center">FITNESS</h6>
-            <h6 class="section-subtitle mb-5 text-center"> HEALTHY MIND NEED A HEALTHY BODY </h6>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100" />
-                        <div class="card-body"></div>
+    <!-- account form section starts  -->
+    <div class="account-form">
+        <div id="close-form" class="fas fa-times"></div>
+        <div class="buttons">
+            <span class="btn active login-btn">login</span>
+            <span class="btn register-btn">register</span>
+        </div>
+        <form class="login-form active" action="">
+            <h3>login now</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+                <a href="#">forgot password?</a>
+            </div>
+            <input type="submit" value="login now" class="btn">
+        </form>
+        <form class="register-form" action="">
+            <h3>register now</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <input type="password" placeholder="confirm your password" class="box">
+            <input type="submit" value="register now" class="btn">
+        </form>
+    </div>
+    <!-- account form section ends -->
+    <!-- header section ends -->
+    <!-- home section starts  -->
+    <section class="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <section class="swiper-slide slide" style="background: url(assets/imgs/home-slide-3.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>WE INNOVATE LEARNING PROCESSES- StudentEduTour</h3>
+                        <p>LEARN AT YOUR COMFORT OF YOUR OWN HOME</p>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </section>
+                <section class="swiper-slide slide" style="background: url(assets/imgs/home-slide-2.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>the best Mentors you will find find here!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit labore dolore unde,
+                            quidem corrupti?</p>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </section>
+                <section class="swiper-slide slide" style="background: url(assets/imgs/home-slide-1.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>ASK YOUR DOUBTS..ANYTIME!! ANYWHERE!! </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit labore dolore unde,
+                            quidem corrupti?</p>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- home section ends -->
+    <!-- subjects section starts  -->
+    <section class="subjects">
+        <h1 class="heading">our popular subjects</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="assets/imgs/physics-icon.png" alt="">
+                <h3>Physics</h3>
+                <p>12 modules</p>
+            </div>
+            <div class="box">
+                <img src="assets/imgs/maths-icon.png" alt="">
+                <h3>mathemetics</h3>
+                <p>12 modules</p>
+            </div>
+            <div class="box">
+                <img src="assets/imgs/chemistry-icon.png" alt="">
+                <h3>chemistry</h3>
+                <p>12 modules</p>
+            </div>
+            <div class="box">
+                <img src="assets/imgs/biol-icon.png" alt="">
+                <h3>biology</h3>
+                <p>12 modules</p>
+            </div>
+            <div class="box">
+                <img src="assets/imgs/2901406.png" alt="">
+                <h3>Social studies</h3>
+                <p>12 modules</p>
+            </div>
+            <div class="box">
+                <img src="assets/imgs/eng-icon.png" alt="">
+                <h3>English</h3>
+                <p>12 modules</p>
+            </div>
+        </div>
+    </section>
+    <!-- subjects section ends -->
+    <!-- home courses slider section starts  -->
+    <section class="home-courses">
+        <h1 class="heading"> our popular study material </h1>
+        <div class=" home-courses-slider">
+            <div class="swiper-wrapper">
+                <div class=" slide">
+                    <div class="image">
+                        <img src="assets/imgs/class9-icon.jpeg" alt="">
+                        <h3>class 9th</h3>
+                    </div>
+                    <div class="content">
+                        <h3>class 9th</h3>
+                        <p></p>
+                        <a href="#" class="btn">read more</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100" />
-                        <div class="card-body"></div>
+                <div class=" slide">
+                    <div class="image">
+                        <img src="assets/imgs/class10-icon.jpeg" alt="">
+                        <h3>class 10th</h3>
+                    </div>
+                    <div class="content">
+                        <h3>class 10th</h3>
+                        <p></p>
+                        <a href="#" class="btn">read more</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100" />
-                        <div class="card-body"></div>
+                <div class=" slide">
+                    <div class="image">
+                        <img src="assets/imgs/class11-icon.jpeg" alt="">
+                        <h3>class 11th</h3>
+                    </div>
+                    <div class="content">
+                        <h3>class 11th</h3>
+                        <p></p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class=" slide">
+                    <div class="image">
+                        <img src="assets/imgs/class12-icon.jpeg" alt="">
+                        <h3>class 12th</h3>
+                    </div>
+                    <div class="content">
+                        <h3>class 12th</h3>
+                        <p></p>
+                        <a href="#" class="btn">read more</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End of Blog Section -->
-    <!-- BLOG AND NEWS SECTION -->
-    <section class="blog">
-        <div class="blog-section">
-            <div class="section-content">
-                <div class="title">
-                    <h2>blog & news</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, illum.</p>
-                </div>
-                <div class="cards">
-                    <div class="card">
-                        <div class="image-section">
-                            <img src="assets/imgs/blog-3.jpg" alt="">
-                        </div>
-                        <div class="article">
-                            <h4>title one</h4>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vitae laboriosam
-                                accusamus sed maiores porro iusto minima deleniti? Nesciunt adipisci quam molestiae sunt
-                                vitae quis repudiandae officia voluptates rem doloremque. </p>
-                        </div>
-                        <div class="blog-view">
-                            <a href="#" class="button">Read more</a>
-                        </div>
-                        <div class="posted-date">
-                            <p>posted on jan 30 2022 </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image-section">
-                            <img src="assets/imgs/blog-3.jpg" alt="">
-                        </div>
-                        <div class="article">
-                            <h4>title one</h4>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vitae laboriosam
-                                accusamus sed maiores porro iusto minima deleniti? Nesciunt adipisci quam molestiae sunt
-                                vitae quis repudiandae officia voluptates rem doloremque. </p>
-                        </div>
-                        <div class="blog-view">
-                            <a href="#" class="button">Read more</a>
-                        </div>
-                        <div class="posted-date">
-                            <p>posted on jan 30 2022 </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image-section">
-                            <img src="assets/imgs/blog-3.jpg" alt="">
-                        </div>
-                        <div class="article">
-                            <h4>title one</h4>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vitae laboriosam
-                                accusamus sed maiores porro iusto minima deleniti? Nesciunt adipisci quam molestiae sunt
-                                vitae quis repudiandae officia voluptates rem doloremque. </p>
-                        </div>
-                        <div class="blog-view">
-                            <a href="#" class="button">Read more</a>
-                        </div>
-                        <div class="posted-date">
-                            <p>posted on jan 30 2022 </p>
-                        </div>
-                    </div>
+    <!-- home courses slider section ends -->
+    <!-- footer section starts  -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> <i class="fas fa-lightbulb"></i> StudentEduTour </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatem.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- END OF BLOG AND NEWS SECTION -->
-    <!-- Contact Section -->
-    <section id="contact" class="section has-img-bg pb-0">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5 my-3">
-                    <h6 class="mb-0">Phone</h6>
-                    <p class="mb-4">+91 7520497274</p>
-                    <h6 class="mb-0">Address</h6>
-                    <p class="mb-4">..</p>
-                    <h6 class="mb-0">Email</h6>
-                    <p class="mb-0">info.StudentEduTour@website.com</p>
-                    <p></p>
-                </div>
-                <div class="col-md-7">
-                    <form>
-                        <h4 class="mb-4">Drop Us A Line</h4>
-                        <div class="form-row">
-                            <div class="form-group col-sm-4">
-                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name"
-                                    placeholder="Name" />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="email" class="form-control text-white rounded-0 bg-transparent"
-                                    name="Email" placeholder="Email" />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="text" class="form-control text-white rounded-0 bg-transparent"
-                                    name="subject" placeholder="Subject" />
-                            </div>
-                            <div class="form-group col-12">
-                                <textarea name="message" id="" cols="30" rows="4"
-                                    class="form-control text-white rounded-0 bg-transparent"
-                                    placeholder="Message"></textarea>
-                            </div>
-                            <div class="form-group col-12 mb-0">
-                                <button type="submit" class="btn btn-primary rounded w-md mt-3"> Send </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html" class="link">home</a>
+                <a href="about.html" class="link">about</a>
+                <a href="#" class="link">ASK DOUBTS</a>
+                <a href="contact.html" class="link">contact</a>
             </div>
-            <!-- Page Footer -->
-            <footer class="mt-5 py-4 border-top border-secondary"></footer>
-            <!-- End of Page Footer -->
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#" class="link">help center</a>
+                <a href="#" class="link">ask questions</a>
+                <a href="#" class="link">send feedback</a>
+                <a href="#" class="link">private policy</a>
+                <a href="#" class="link">terms of use</a>
+            </div>
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest upadates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="enter your email" id="" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
         </div>
+        <div class="credit"> created by <span> StudentEduTour</span> | all rights reserved! </div>
     </section>
+    <!-- footer section ends -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
