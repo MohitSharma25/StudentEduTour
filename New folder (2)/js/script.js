@@ -116,3 +116,19 @@ var swiper = new Swiper(".home-courses-slider", {
     },
   },
 });
+var swiper = new Swiper(".home-courses-slider", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});

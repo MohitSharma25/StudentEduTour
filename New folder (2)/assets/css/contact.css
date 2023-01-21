@@ -43,9 +43,24 @@ section {
 
 .heading-link {
     text-align: center;
-    background: url(../imgs/background.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    background: transparent;
+    background-position:center;
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+.heading-link::before {
+    content: "";
+    background: url(../imgs/Contact_Us_page_bg.jpg) no-repeat;
+    background-size:100% 500%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .heading-link h3 {
@@ -280,6 +295,9 @@ section {
 }
 
 
+.contact {
+    background-color: #eee;
+}
 
 .contact .icons-container {
     margin-bottom: 3rem;
@@ -349,13 +367,16 @@ section {
     flex: 1 1 40rem;
     border: 0.1rem solid #b50e0e;
     padding: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .contact .row form h3 {
     font-size: 2.5rem;
     text-transform: capitalize;
-    color: #444;
+    color: rgb(32, 25, 25);
     padding-bottom: 1rem;
+    padding-left: 0.5rem;
 }
 
 .contact .row form .box {
@@ -364,32 +385,36 @@ section {
     border: 0.1rem solid #b50e0e;
     font-size: 1.6rem;
     margin: .7rem 0;
+    background-color: #eee;
 }
 
 .contact .row form .box:focus {
-    background: #b50e0e;
-    color: #fff;
+    background: #dcb9b9;
+    color: rgb(15, 27, 71);
 }
 
 .contact .row form .box:focus::-webkit-input-placeholder {
-    color: #eee;
-}
-
-.contact .row form .box:focus:-ms-input-placeholder {
-    color: #eee;
+    color:  rgb(15, 27, 71);
 }
 
 .contact .row form .box:focus::-ms-input-placeholder {
-    color: #eee;
+    color:  rgb(15, 27, 71);
 }
 
 .contact .row form .box:focus::placeholder {
-    color: #eee;
+    color:  rgb(15, 27, 71);
 }
 
 .contact .row form textarea {
     height: 15rem;
     resize: none;
+}
+
+
+
+
+.faq {
+    background-color: #eee;
 }
 
 .faq .accordion-container {
@@ -469,7 +494,10 @@ section {
 }
 
 .logo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill);
     text-align: center;
+    background-color: #eee;
 }
 
 .logo-container img {
@@ -629,6 +657,11 @@ section {
 
     .home .slide .content h3 {
         font-size: 3rem;
+    }
+
+    .contact .row form {
+        margin-left: 0%;
+        margin-right: 0%;
     }
 }
 
