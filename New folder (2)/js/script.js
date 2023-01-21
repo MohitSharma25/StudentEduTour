@@ -89,8 +89,14 @@ let accordion = document.querySelectorAll('.faq .accordion-container .accordion'
 
 accordion.forEach(acco => {
   acco.onclick = () => {
-    accordion.forEach(dion => dion.classList.remove('active'));
-    acco.classList.toggle('active');
+    if (acco.classList.contains('active')) {
+      accordion.forEach(dion => dion.classList.remove('active'));
+      acco.classList.remove('active');
+    }
+    else {
+      accordion.forEach(dion => dion.classList.remove('active'));
+      acco.classList.toggle('active');
+    }
   };
 });
 
