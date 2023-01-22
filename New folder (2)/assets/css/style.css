@@ -23,6 +23,7 @@ img {
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
@@ -148,6 +149,7 @@ section {
     font-size: 2rem;
     text-transform: capitalize;
     color: #444;
+    transition: ease 0.3s;
 }
 
 .header .navbar a:hover {
@@ -369,7 +371,7 @@ section {
     position: relative;
     background: #fdf0f0;
     overflow: hidden;
-    margin: 0px 10px;
+    margin: 0px 5px;
 }
 
 .home-courses .slide:hover .content {
@@ -414,6 +416,9 @@ section {
     color: #777;
     color: #eee;
 }
+.home-courses .slide .content a {
+    width: 80%;
+}
 
 .home-courses .slide .content .btn:hover {
     background: #444;
@@ -431,7 +436,7 @@ section {
 }
 
 .footer {
-    background: #f8dbda;
+    background: #e9d9e2;
 }
 
 .footer .box-container {
