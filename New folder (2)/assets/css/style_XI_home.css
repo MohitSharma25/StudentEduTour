@@ -69,15 +69,15 @@ section {
 }
 
 #heading-link-XI-Arts::before {
-    content: "";
+    content:"";
     background: url(../imgs/arts_Title_bg.jpg) no-repeat;
-    background-size:100% 500%;
+    background-size:cover;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.75;
+    opacity: 0.5;
     overflow: hidden;
     z-index: -1;
 }
