@@ -99,7 +99,7 @@ section {
     top: 0;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #eaf3e8;
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     padding: 2rem 10%;
@@ -308,7 +308,7 @@ body {
 .section-title {
     border-bottom: solid 1px rgb(247, 12, 12);
     display: block;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .section-title span {
@@ -326,7 +326,7 @@ body {
 }
 
 .list-title {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bold;
     line-height: 1.5;
 }
@@ -348,8 +348,6 @@ body {
 .section-body {
     padding: 10px;
     padding-bottom: 0px;
-    background-color: #fff;
-
 }
 
 .section-title {
