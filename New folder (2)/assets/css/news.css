@@ -125,7 +125,8 @@ section {
 }
 
 .header .navbar {
-    position: relative;
+    margin-bottom: 0px;
+    min-height: 0px;
 }
 
 .header .navbar #close-navbar {
