@@ -281,6 +281,13 @@ section {
     color: #fff;
 }
 
+.column {
+    width: 50%;
+}
+.slide {
+    height: 25%;
+}
+
 .home-courses .slide {
     text-align: center;
     position: relative;
@@ -299,6 +306,7 @@ section {
 
 .home-courses .slide .image img {
     width: 100%;
+    height: 225px;
     margin-bottom: 1.5rem;
 }
 

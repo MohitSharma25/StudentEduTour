@@ -282,7 +282,8 @@ section {
 }
 
 .science .images img {
-    width: 1290px;
+    width: 100%;
+    height: 675px;
 }
 
 .heading {
@@ -302,6 +303,10 @@ section {
     -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
+}
+
+.courses .box-container .box{
+    border: 0.1rem solid #ff6e42;
 }
 
 .courses .box-container .box:hover .image img {
@@ -340,7 +345,6 @@ section {
 .courses .box-container .box .content {
     padding: 2rem;
     text-align: center;
-    border: 0.1rem solid #ff6e42;
 }
 
 .courses .box-container .box .content h3 {
