@@ -91,7 +91,7 @@
             </div>
         </div>
         <div class="row">
-            <form action="contact.php" method="post">
+            <form method="post" id="form">
                 <h3>Send Us A Message.</h3>
                 <input type="text" placeholder="Name" class="box" name="name">
                 <input type="email" placeholder="Email" class="box" name="email">
@@ -218,6 +218,19 @@
     <!-- footer section ends -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        jQuery('#form').on('submit', function (e) {
+            e.preventDefault();
+            jQuery.ajax({
+                url: 'https://script.google.com/macros/s/AKfycbz-p15CTJAilrTzf0obgNHxL1BPmwwo-1eZYKVUx1w51Ck_4RwixIYEa6umaAa02qYR/exec',
+                type: 'post',
+                data: jQuery('#form').serialize(),
+                success: function (result) {
+                    console.log(result);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
